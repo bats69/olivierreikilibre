@@ -12,9 +12,11 @@ body {
   font-family: Roboto, sans-serif; }
 
 h1 {
-  display: flex;
+  /*display: flex;
   width: 50%;
-  margin: 5px; }
+  margin: 5px;*/
+  text-align: center;
+  margin: 10px; }
 
 h1,
 .def__work--title {
@@ -26,19 +28,24 @@ h1,
   display: flex;
   flex-wrap: wrap;
   font-size: 1.5rem;
-  margin: 5px; }
+  margin: 5px;
+  position: absolute;
+  color: #fff; }
 
 .nav__link {
   display: inline-flex;
   position: absolute;
   left: 800px;
-  top: 15px;
-  font-size: 2em;
+  /*top: 15px;*/
+  top: 65px;
+  /*font-size: 2em;*/
+  font-size: 1.5em;
   flex-direction: column;
   align-items: flex-end;
   margin: 10px; }
   .nav__link .link {
-    color: #000;
+    color: #fff;
+    /*color: #000;*/
     text-decoration: none;
     margin-right: 20px; }
     .nav__link .link:hover {
@@ -89,6 +96,7 @@ a {
 
 .def__work--subtitle {
   position: relative;
+  font-family: Roboto, sans-serif;
   text-align: center;
   bottom: 25px;
   font-size: 1.5em;
