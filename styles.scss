@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import "./libs/reset.css";
 @import "./libs/_mixins.scss";
+@import "./libs/_keyframes.scss";
 $font-text: Roboto, sans-serif;
 $font-title: 'Abril Fatface', sans-serif;
 $size:3em;
@@ -84,6 +85,24 @@ h1,
     justify-content: center;
     margin: 10px;
 }
+a{
+	text-decoration: none;
+	&:hover{
+			.def__work--subtitle{
+			opacity: 1;
+			transition-duration: 1s;
+		}
+	}
+}
+.def__work--subtitle{
+	position: relative;
+    text-align: center;
+    bottom: 25px;
+    font-size: 1.5em;
+    opacity: 0;
+    color: #000;
+    text-decoration: none;
+}
 .footer__heading{
 	font-family: $font-title;
 	position: absolute;
@@ -108,7 +127,6 @@ footer{
 		margin-bottom: 25px;
 		margin-top: 30px;
 		text-decoration: none;
-		
 	}
 	.fab{
 		font-size: $size;

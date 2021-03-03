@@ -1,6 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url(./libs/reset.css);
+@keyframes hover {
+  0% {
+    opacity: 0;
+    transform: translateY(-4px); }
+  100% {
+    opacity: 1;
+    transform: translateY(-10px); } }
 body {
   font-family: Roboto, sans-serif; }
 
@@ -73,6 +80,21 @@ h1,
   height: fit-content;
   justify-content: center;
   margin: 10px; }
+
+a {
+  text-decoration: none; }
+  a:hover .def__work--subtitle {
+    opacity: 1;
+    transition-duration: 1s; }
+
+.def__work--subtitle {
+  position: relative;
+  text-align: center;
+  bottom: 25px;
+  font-size: 1.5em;
+  opacity: 0;
+  color: #000;
+  text-decoration: none; }
 
 .footer__heading {
   font-family: "Abril Fatface", sans-serif;
