@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import "../libs/reset.css";
+@import "../libs/_mixins.scss";
+@import "../libs/_keyframes.scss";
+$font-text: Roboto, sans-serif;
+$font-title: 'Abril Fatface', sans-serif;
+$size:3em;
+body{
+	font-family: $font-text
+}
+h1{
+	/*display: flex;
+	width: 50%;
+	margin: 5px;*/
+	text-align: center;
+	margin: 10px;
+}
+.container__bio{
+	width: 50px;
+	padding-top: 10px;
+	position: absolute;
+	top: 10px;
+	height: 40px;
+	text-align: center;
+	background: lighten($color-primary, 25%);
+	} .fas{
+		color: $color-init;
+		font-size: 2em;
+}
+h1,
+.def__work--title{
+	font-size: $size;
+	font-family: $font-title;
+}
+.nav__link{
+	display: inline-flex;
+    position: absolute;
+    left: 840px;
+    top: 15px;
+    font-weight: bold;
+    font-size: 2em;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 10px;
+	.link{
+		color: #000;
+    	text-decoration: none;
+		margin-right: 20px;
+		&:hover{
+			text-decoration: underline;
+			color: blue;
+		}
+	}
+}
+img{
+	width: 100%;
+	margin-bottom: 25px;
+}
+.def__reiki--heading{
+	margin-top: 35px;
+	margin-left: 50px;
+}
+.def__reiki--wrap{
+	margin-top: 15px;
+	text-align: justify;
+	margin: 20px 50px;
+	line-height: 3em;
+}
+.container__img--reiki{
+	display: flex;
+	justify-content: center;
+}
+.image{
+	width: 50%;
+    height: 365px;
+    margin-left: 0;
+    margin: 75px;
+}
+.footer__heading{
+	font-family: $font-title;
+	position: absolute;
+    font-size: 1.5em;
+    letter-spacing: 4px;
+}
+.footer__heading,
+footer .fab,
+footer a{
+	color: $color-init;
+}
+footer{
+	display: flex;
+	justify-content: space-around;
+	background:$color-primary;
+	a{
+		display: flex;
+	    flex-direction: column;
+	    align-items: center;
+		font-family: $font-text;
+		font-size: 1.5em;
+		margin-bottom: 25px;
+		margin-top: 30px;
+		text-decoration: none;
+	}
+	.fab{
+		font-size: $size;
+		margin: 30px;
+		margin-bottom: 5px;
+	}
+}
