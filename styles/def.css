@@ -80,6 +80,12 @@ img {
   margin: 20px 50px;
   line-height: 3em; }
 
+.def__coupfeu--list {
+  margin-left: 85px;
+  line-height: 40px;
+  margin-bottom: 25px;
+  list-style: initial; }
+
 .container__img--reiki {
   display: flex;
   justify-content: center; }
