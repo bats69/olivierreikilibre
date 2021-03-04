@@ -56,12 +56,24 @@ h1,
 
 img {
   width: 100%;
-  margin-bottom: 25px; }
+  margin-bottom: 25px;
+  border-radius: 15px;
+  border: 1px solid #b99b80; }
 
+.def__accesbar--heading,
+.def__coupfeu--heading,
+.def__rebout--heading,
+.def__eft--heading,
+.def__hypnoz--heading,
 .def__reiki--heading {
   margin-top: 35px;
   margin-left: 50px; }
 
+.def__accesbar--wrap,
+.def__coupfeu--wrap,
+.def__rebout--wrap,
+.def__eft--wrap,
+.def__hypnoz--wrap,
 .def__reiki--wrap {
   margin-top: 15px;
   text-align: justify;
@@ -76,7 +88,8 @@ img {
   width: 50%;
   height: 365px;
   margin-left: 0;
-  margin: 75px; }
+  margin: 75px;
+  box-shadow: 8px 10px 15px #775B42; }
 
 .footer__heading {
   font-family: "Abril Fatface", sans-serif;
