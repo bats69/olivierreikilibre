@@ -7,7 +7,8 @@ $font-text: Roboto, sans-serif;
 $font-title: 'Abril Fatface', sans-serif;
 $size:3em;
 body{
-	font-family: $font-text
+	height: 100%;
+	font-family: $font-text;
 }
 h1{
 	/*display: flex;
@@ -110,6 +111,8 @@ footer a{
 footer{
 	display: flex;
 	justify-content: space-around;
+	position: relative;
+	top: 200px;
 	background:$color-primary;
 	a{
 		display: flex;

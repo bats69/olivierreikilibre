@@ -9,6 +9,7 @@
     opacity: 1;
     transform: translateY(-10px); } }
 body {
+  height: 100%;
   font-family: Roboto, sans-serif; }
 
 h1 {
@@ -111,6 +112,8 @@ footer a {
 footer {
   display: flex;
   justify-content: space-around;
+  position: relative;
+  top: 200px;
   background: #775B42; }
   footer a {
     display: flex;
