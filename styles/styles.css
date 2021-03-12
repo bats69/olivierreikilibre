@@ -61,6 +61,10 @@ h1 {
   opacity: 0;
   height: 800px;
   background: linear-gradient(117deg, #b99b80, 77%, white); }
+  .biography .fas {
+    padding-top: 15px;
+    font-size: 16px;
+    letter-spacing: 2px; }
   .biography--descript {
     line-height: 25px;
     text-align: left;
