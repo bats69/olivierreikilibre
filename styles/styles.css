@@ -51,10 +51,8 @@ h1 {
     .container__bio:hover .biography--descript {
       padding-top: 25px;
       padding: 10px;
-      animation: biography;
       opacity: 1;
-      transition-delay: 1.8s;
-      transition-duration: 1s; }
+      transition-delay: 1.8s; }
 
 .biography {
   margin-top: 8px;
