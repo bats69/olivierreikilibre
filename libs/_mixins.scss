@@ -1,3 +1,11 @@
 $color-primary: #775B42;
 $color-init: #fff;
 $color-prim-light: lighten($color-primary, 25%);
+$breakpoints:(
+	desktop: 1102px
+);
+@mixin desktop {
+	@media screen and (min-width: map-get($breakpoints, desktop)){
+		@content;
+	}
+}
