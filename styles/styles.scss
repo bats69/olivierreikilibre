@@ -10,9 +10,6 @@ body{
 	font-family: $font-text;
 }
 h1{
-	/*display: flex;
-	width: 50%;
-	margin: 5px;*/
 	text-align: center;
 	margin: 10px;
 }
@@ -81,8 +78,7 @@ iframe{
 .content--contact{
 	cursor: pointer;
 	color: $color-init;
-	margin-top: 15px;
-	margin-bottom: 15px;
+	padding: 15px;
 	&:hover .contact--wrap{
 		display: block;
 	}
