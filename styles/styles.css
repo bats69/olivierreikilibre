@@ -38,7 +38,7 @@ h1 {
     background: #b99b80;
     z-index: 1;
     opacity: 1;
-    width: 20%;
+    width: 30%;
     border-radius: 0px 10px 0px 0px;
     box-shadow: 6px 7px 9px #775B42;
     transition-duration: 1s; }
@@ -48,30 +48,69 @@ h1 {
     box-shadow: 6px 7px 9px #775B42;
     transition-duration: 1.2s;
     transition-delay: 1.1s; }
-    .container__bio:hover .biography--descript {
-      padding-top: 25px;
-      padding: 10px;
-      opacity: 1;
-      transition-delay: 1.8s; }
 
 .biography {
   margin-top: 8px;
   opacity: 0;
-  height: 800px;
+  height: fit-content;
   background: linear-gradient(117deg, #b99b80, 77%, white); }
   .biography .fas {
     padding-top: 15px;
     font-size: 16px;
     letter-spacing: 2px; }
-  .biography--descript {
-    line-height: 25px;
-    text-align: left;
-    opacity: 0;
-    color: #fff;
-    font-family: Roboto, sans-serif; }
   .biography h3 {
     padding-top: 25px;
     color: #fff; }
+
+.who--wrap {
+  display: none;
+  line-height: 25px;
+  text-align: left;
+  opacity: 0;
+  color: #fff;
+  font-family: Roboto, sans-serif; }
+
+.where--wrap {
+  display: none; }
+
+.contact--wrap {
+  display: none; }
+
+iframe {
+  position: relative;
+  left: 60px;
+  width: 150px;
+  padding: 15px; }
+
+.content--contact {
+  cursor: pointer;
+  color: #fff;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+  .content--contact:hover .contact--wrap {
+    display: block; }
+
+.content--where {
+  cursor: pointer;
+  color: #fff;
+  margin-top: 15px; }
+  .content--where:hover .where--wrap {
+    display: block;
+    width: 150px;
+    padding: 15px; }
+
+.content--who {
+  cursor: pointer;
+  color: #fff;
+  padding-top: 15px; }
+  .content--who:hover .who--wrap {
+    display: block;
+    padding-top: 25px;
+    padding: 10px;
+    opacity: 1;
+    transform-duration: 2s;
+    animation-duration: 2s;
+    transition-duration: 2s; }
 
 .fas {
   color: #fff;
@@ -92,29 +131,13 @@ h1,
   color: #fff;
   line-height: 30px; }
 
-.nav__link {
-  display: inline-flex;
-  position: absolute;
-  left: 840px;
-  /*top: 15px;*/
-  top: 65px;
-  /*font-size: 2em;*/
-  font-size: 1.5em;
-  flex-direction: column;
-  align-items: flex-end;
-  margin: 10px;
-    /*@include desktop{
-			left: 0px;
-			right: 10px;
-		}*/ }
-  .nav__link .link {
-    color: #fff;
-    /*color: #000;*/
-    text-decoration: none;
-    margin-right: 20px; }
-    .nav__link .link:hover {
-      text-decoration: underline;
-      color: blue; }
+.link {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px; }
+  .link:hover {
+    text-decoration: underline;
+    color: blue; }
 
 .img {
   width: 100%;
