@@ -23,16 +23,16 @@ h1 {
   margin: 10px; }
 
 .container__bio {
-  width: 50px;
-  padding-top: 10px;
+  width: 100px;
+  padding-top: 20px;
   position: absolute;
-  top: 10px;
+  top: 0px;
   cursor: pointer;
-  height: 40px;
+  height: 48px;
   text-align: center;
   background: #b99b80; }
   .container__bio:hover {
-    background: #b99b80;
+    background: linear-gradient(90deg, #775B42, 77%, #b99b80);
     z-index: 1;
     opacity: 1;
     width: 30%;
@@ -50,63 +50,45 @@ h1 {
   margin-top: 8px;
   opacity: 0;
   height: fit-content;
-  background: linear-gradient(117deg, #b99b80, 77%, white); }
+  background: linear-gradient(90deg, #775B42, 77%, #b99b80); }
   .biography .fas {
-    padding-top: 15px;
-    font-size: 16px;
-    letter-spacing: 2px; }
+    padding-bottom: 15px;
+    font-size: 24px;
+    letter-spacing: 2px;
+    line-height: 36px;
+    margin: 5px; }
   .biography h3 {
     padding-top: 25px;
     color: #fff; }
 
 .who--wrap {
-  display: none;
-  line-height: 25px;
+  padding-top: 15px;
+  padding: 10px;
+  line-height: 40px;
+  letter-spacing: 2px;
   text-align: left;
-  opacity: 0;
+  font-size: 28px;
   color: #fff;
   font-family: Roboto, sans-serif; }
 
-.where--wrap {
-  display: none; }
-
-.contact--wrap {
-  display: none; }
-
 iframe {
   position: relative;
-  left: 60px;
   width: 150px;
   padding: 15px; }
 
-.content--contact {
-  cursor: pointer;
-  color: #fff;
-  padding: 15px; }
-  .content--contact:hover .contact--wrap {
-    display: block; }
-
-.content--where {
-  cursor: pointer;
-  color: #fff;
-  margin-top: 15px; }
-  .content--where:hover .where--wrap {
-    display: block;
-    width: 150px;
-    padding: 15px; }
-
+.content--contact,
+.content--where,
 .content--who {
   cursor: pointer;
   color: #fff;
-  padding-top: 15px; }
-  .content--who:hover .who--wrap {
-    display: block;
-    padding-top: 25px;
-    padding: 10px;
-    opacity: 1;
-    transform-duration: 2s;
-    animation-duration: 2s;
-    transition-duration: 2s; }
+  padding: 15px;
+  font-size: 40px; }
+
+.content--where {
+  margin-top: 15px; }
+
+.content--who {
+  padding-top: 25px; }
 
 .fas {
   color: #fff;

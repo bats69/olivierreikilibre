@@ -14,16 +14,16 @@ h1{
 	margin: 10px;
 }
 .container__bio{
-	width: 50px;
-	padding-top: 10px;
+	width: 100px;
+	padding-top: 20px;
 	position: absolute;
-	top: 10px;
+	top: 0px;
 	cursor: pointer;
-	height: 40px;
+	height: 48px;
 	text-align: center;
 	background: $color-prim-light;
 	&:hover{
-		background: $color-prim-light;
+		background: linear-gradient(90deg, $color-primary, 77%, $color-prim-light);;
 		z-index: 1;
 		opacity: 1;
 		width: 30%;
@@ -43,11 +43,13 @@ h1{
 	margin-top: 8px;
 	opacity: 0;
 	height: fit-content;
-	background: linear-gradient(117deg, #b99b80,77%, white);
+	background: linear-gradient(90deg, $color-primary, 77%, $color-prim-light);
 	.fas{
-		padding-top: 15px;
-	    font-size: 16px;
+		padding-bottom: 15px;
+	    font-size: 24px;
 	    letter-spacing: 2px;
+	    line-height: 36px;
+	    margin: 5px;
 	}
 	
 	h3{
@@ -56,56 +58,33 @@ h1{
 	}
 }
 .who--wrap{
-	display: none;
-	line-height: 25px;
+	padding-top:15px;
+	padding: 10px;
+	line-height: 40px;
+	letter-spacing: 2px;
 	text-align: left;
-	opacity: 0;
+	font-size: 28px;
 	color: $color-init;
 	font-family: $font-text;
 }
-.where--wrap{
-	display: none;
-}
-.contact--wrap{
-	display: none;
-}
 iframe{
 	position: relative;
-    left: 60px;
 	width: 150px;
     padding: 15px;
 }
-.content--contact{
+.content--contact,
+.content--where,
+.content--who{
 	cursor: pointer;
 	color: $color-init;
 	padding: 15px;
-	&:hover .contact--wrap{
-		display: block;
-	}
+	font-size: 40px;
 }
 .content--where{
-	cursor: pointer;
-	color: $color-init;
 	margin-top: 15px;
-	&:hover .where--wrap{
-		display: block;
-		width: 150px;
-		padding:15px;
-	}
 }
-.content--who, {
-	cursor: pointer;
-	color: $color-init;
-	padding-top: 15px;
-	&:hover .who--wrap{
-		display: block;
-		padding-top: 25px;
-		padding: 10px;
-		opacity: 1;
-		transform-duration: 2s;
-		animation-duration: 2s;
-		transition-duration: 2s;
-	}
+.content--who{
+	padding-top: 25px;
 }
 .fas{
 	color: $color-init;
