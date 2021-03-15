@@ -18,28 +18,55 @@
     opacity: 1;
     display: block; } }
 body {
-  height: 100%;
   font-family: Roboto, sans-serif; }
 
 h1 {
-  /*display: flex;
-  width: 50%;
-  margin: 5px;*/
   text-align: center;
   margin: 10px; }
 
 .container__bio {
-  width: 50px;
-  padding-top: 10px;
+  width: 100px;
+  padding-top: 20px;
   position: absolute;
-  top: 10px;
-  height: 40px;
+  top: 0px;
+  cursor: pointer;
+  height: 48px;
   text-align: center;
   background: #b99b80; }
+  .container__bio:hover {
+    background: linear-gradient(90deg, #775B42, 77%, #b99b80);
+    z-index: 1;
+    opacity: 1;
+    width: 30%;
+    border-radius: 0px 10px 0px 0px;
+    box-shadow: 6px 7px 9px #775B42;
+    transition-duration: 1s; }
+  .container__bio:hover .price--wrap {
+    opacity: 1;
+    border-radius: 0px 0px 10px;
+    box-shadow: 6px 7px 9px #775B42;
+    transition-duration: 1.2s;
+    transition-delay: 1.5s; }
 
 .fas {
   color: #fff;
   font-size: 2em; }
+
+.price--wrap {
+  font-size: 24px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  margin-top: 15px;
+  color: #fff;
+  text-align: left;
+  padding-left: 15px;
+  opacity: 0;
+  height: fit-content;
+  background: linear-gradient(90deg, #775B42, 77%, #b99b80); }
+  .price--wrap .title--list {
+    font-size: 30px;
+    letter-spacing: 3px;
+    padding-bottom: 25px; }
 
 h1,
 .def__work--title {

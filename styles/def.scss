@@ -7,27 +7,47 @@ $font-text: Roboto, sans-serif;
 $font-title: 'Abril Fatface', sans-serif;
 $size:3em;
 body{
-	height: 100%;
 	font-family: $font-text;
 }
 h1{
-	/*display: flex;
-	width: 50%;
-	margin: 5px;*/
 	text-align: center;
 	margin: 10px;
 }
 .container__bio{
-	width: 50px;
-	padding-top: 10px;
-	position: absolute;
-	top: 10px;
-	height: 40px;
-	text-align: center;
-	background: lighten($color-primary, 25%);
-	} .fas{
+	@include menu;
+	&:hover{
+		background: linear-gradient(90deg, $color-primary, 77%, $color-prim-light);;
+		z-index: 1;
+		opacity: 1;
+		width: 30%;
+		border-radius: 0px 10px 0px 0px;
+		box-shadow: 6px 7px 9px $color-primary;
+		transition-duration: 1s;
+		}
+		&:hover .price--wrap{
+			@include menu-hover;
+		}
+	} 
+	.fas{
 		color: $color-init;
 		font-size: 2em;
+}
+.price--wrap{
+	font-size: 24px;
+	padding-top: 20px;
+	padding-bottom: 15px;
+	margin-top: 15px;
+	color: $color-init;
+	text-align: left;
+	padding-left: 15px;
+	opacity: 0;
+	height: fit-content;
+	background: linear-gradient(90deg, $color-primary, 77%, $color-prim-light);
+	.title--list{
+		font-size: 30px;
+	    letter-spacing: 3px;
+	    padding-bottom: 25px;
+	}
 }
 h1,
 .def__work--title{
