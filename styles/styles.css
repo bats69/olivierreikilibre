@@ -199,7 +199,7 @@ footer a {
 
 footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   background: #775B42; }
   footer a {
     display: flex;
