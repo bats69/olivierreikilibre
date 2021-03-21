@@ -82,7 +82,6 @@ h1 {
   .biography .fas {
     display: none;
     visibility: hidden;
-    padding-bottom: 15px;
     font-size: 24px;
     line-height: 36px;
     margin: 5px; }
@@ -152,6 +151,7 @@ h1,
   line-height: 30px; }
 
 .link {
+  font-size: 24px;
   color: #fff;
   text-decoration: none;
   margin-right: 20px; }

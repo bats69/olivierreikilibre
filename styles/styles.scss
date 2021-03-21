@@ -57,12 +57,10 @@ h1{
 	.fas{
 		display: none;
 		visibility: hidden;
-		padding-bottom: 15px;
 	    font-size: 24px;
 	    line-height: 36px;
 	    margin: 5px;
 	}
-	
 	h3{
 		padding-top: 25px;
 		color: $color-init;
@@ -131,6 +129,7 @@ h1,
 }
 
 .link{
+	font-size: 24px;
 	color: #fff;
 	text-decoration: none;
 	margin-right: 20px;
