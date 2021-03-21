@@ -11,7 +11,9 @@ body{
 }
 h1{
 	text-align: center;
-	margin: 10px;
+}
+.logo{
+	height: 60px;
 }
 .container__bio{
 	width: 100px;
@@ -19,7 +21,7 @@ h1{
 	position: absolute;
 	top: 0px;
 	cursor: pointer;
-	height: 48px;
+	height: 46px;
 	text-align: center;
 	background: $color-prim-light;
 	&:hover{
@@ -137,14 +139,20 @@ h1,
 
 .img{
 	width: 100%;
-	height: 400px;
+	height: 400px; 
+	background-size: cover;
 	img{
 		width: 100%;
-	    height: 400px;
+	    height: 401px;
 	    position: fixed;
-	    z-index: -1;
-
+	    z-index: -1;	   
 	}
+}
+.img2{
+	animation: fondu 15s ease-in-out infinite both;
+}
+.img1{
+	 animation: fondu2 15s ease-in-out infinite both;
 }
 .container__def--work{
 	display: flex;

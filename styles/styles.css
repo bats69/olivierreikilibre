@@ -17,12 +17,32 @@
     transform: scale(1);
     opacity: 1;
     display: block; } }
+@keyframes fondu {
+  0% {
+    opacity: 1; }
+  33% {
+    opacity: 0; }
+  66% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+@keyframes fondu2 {
+  0% {
+    opacity: 0; }
+  33% {
+    opacity: 1; }
+  66% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 body {
   font-family: Roboto, sans-serif; }
 
 h1 {
-  text-align: center;
-  margin: 10px; }
+  text-align: center; }
+
+.logo {
+  height: 60px; }
 
 .container__bio {
   width: 100px;
@@ -30,7 +50,7 @@ h1 {
   position: absolute;
   top: 0px;
   cursor: pointer;
-  height: 48px;
+  height: 46px;
   text-align: center;
   background: #b99b80; }
   .container__bio:hover {
@@ -138,12 +158,19 @@ h1,
 
 .img {
   width: 100%;
-  height: 400px; }
+  height: 400px;
+  background-size: cover; }
   .img img {
     width: 100%;
-    height: 400px;
+    height: 401px;
     position: fixed;
     z-index: -1; }
+
+.img2 {
+  animation: fondu 15s ease-in-out infinite both; }
+
+.img1 {
+  animation: fondu2 15s ease-in-out infinite both; }
 
 .container__def--work {
   display: flex;
