@@ -5,7 +5,7 @@
 @import "../libs/_keyframes.scss";
 $font-text: Roboto, sans-serif;
 $font-title: 'Abril Fatface', sans-serif;
-$size:3em;
+$size: 3em;
 body{
 	font-family: $font-text;
 }
@@ -84,7 +84,7 @@ iframe{
 	display: none;
 	visibility: hidden;
 	position: relative;
-	left: 60px;
+	left: 45px;
 	width: 150px;
     padding: 15px;
 }
