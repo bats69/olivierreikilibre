@@ -38,8 +38,12 @@
 body {
   font-family: Roboto, sans-serif; }
 
+header {
+  border-bottom: 2px solid #775B42; }
+
 h1 {
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 2px; }
 
 .logo {
   height: 60px;
@@ -115,8 +119,8 @@ h1,
       color: blue; }
 
 img {
-  width: 100%;
-  margin-bottom: 25px;
+  width: 80%;
+  margin: 90px;
   border-radius: 15px;
   border: 1px solid #b99b80; }
 
