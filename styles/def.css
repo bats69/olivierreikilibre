@@ -19,19 +19,33 @@
     display: block; } }
 @keyframes fondu {
   0% {
-    background-image: url(image/bougie2.jpg); }
-  33.33% {
-    background-image: url(image/carte1.jpg); }
-  66.67% {
-    background-image: url(image/bougie2.jpg); }
+    opacity: 1; }
+  33% {
+    opacity: 0; }
+  66% {
+    opacity: 1; }
   100% {
-    background-image: url(image/carte1.jpg); } }
+    opacity: 0; } }
+@keyframes fondu2 {
+  0% {
+    opacity: 0; }
+  33% {
+    opacity: 1; }
+  66% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 body {
   font-family: Roboto, sans-serif; }
 
 h1 {
-  text-align: center;
-  margin: 10px; }
+  text-align: center; }
+
+.logo {
+  height: 60px;
+  width: auto;
+  margin: 0 auto;
+  border: none; }
 
 .container__bio {
   width: 100px;
